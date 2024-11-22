@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+    <title>Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-[#1a1a1a]">
+    <!-- Navigation -->
+    <nav class="absolute top-0 w-full py-6">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Left Menu -->
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-amber-200">Home</a>
+                <a href="#" class="text-white hover:text-amber-200">About</a>
+                <a href="#" class="text-white hover:text-amber-200">Menu</a>
+                <a href="#" class="text-white hover:text-amber-200">Reservation</a>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="logo.png" alt="Coffee Shop Logo" class="h-12">
+            </div>
+
+            <!-- Right Menu -->
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-white hover:text-amber-200">Pages</a>
+                <a href="#" class="text-white hover:text-amber-200">Shop</a>
+                <a href="#" class="text-white hover:text-amber-200">Contact</a>
+                <button class="text-white hover:text-amber-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="text-white hover:text-amber-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="min-h-screen relative">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-black/50">
+            <img src="coffee-bg.jpg" alt="Coffee Background" class="w-full h-full object-cover mix-blend-overlay">
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative">
+            <div class="min-h-screen flex items-center">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                        Enjoy Your<br>
+                        Morning Coffee.
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-8 max-w-lg">
+                        The Coffee Is Brewed By Fist Roasting The Green Coffee Beans Over Hot Coals In Brazier. Given To Opportunity
+                    </p>
+                    <button class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded transition duration-300">
+                        TEST COFFEE
+                    </button>
+                </div>
+
+                <!-- Right Content (Coffee Cup) -->
+                <div class="hidden lg:block w-1/2 relative">
+                    <div class="relative">
+                        <img src="coffee-cup.jpg" alt="Coffee Cup" class="rounded-lg shadow-2xl">
+                        <button class="absolute bottom-4 right-4 bg-black/50 hover:bg-black/70 p-4 rounded-full transition duration-300">
+                            <span class="text-white">PLAY VIDEO</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+</a
